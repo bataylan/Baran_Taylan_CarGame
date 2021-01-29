@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 /// <summary>
 /// UI Car Rotation Button
 /// </summary>
-public class CarRotateButtonUI : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class CarRotateButtonUI : CarRotate, IPointerDownHandler, IPointerUpHandler
 {
     //Button role
     public bool IsRightMovementButton;
@@ -17,12 +17,7 @@ public class CarRotateButtonUI : MonoBehaviour, IPointerDownHandler, IPointerUpH
     /// <param name="eventData">Pointer event data</param>
     public void OnPointerDown(PointerEventData eventData)
     {
-        //Send input to current player car
-        LevelManager.currentCar.RotationInput(IsRightMovementButton ? 1 : -1);
-
-        //If it is first input in initiated turn, send first player input event
-        if (LevelManager.current.IsTurnInitiated && !LevelManager.current.IsTurnStarted)
-            LevelEvents.current.FirstPlayerInput();
+        RotateCarPressDown(IsRightMovementButton);
     }
 
     /// <summary>
@@ -31,7 +26,6 @@ public class CarRotateButtonUI : MonoBehaviour, IPointerDownHandler, IPointerUpH
     /// <param name="eventData">Pointer event data</param>
     public void OnPointerUp(PointerEventData eventData)
     {
-        //Send input to current player car
-        LevelManager.currentCar.RotationInput(0);
+        RotateCarPressUp();
     }
 }

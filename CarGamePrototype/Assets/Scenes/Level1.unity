@@ -232,21 +232,21 @@ MonoBehaviour:
   CarMaxSpeed: 16
   CarAccelerationFactor: 3.5
   CarRotationFactor: 4
-  TurnPointInfosParent: {fileID: 796930561}
   CarPrefab: {fileID: 1938945274064325477, guid: a781f8eaf71bf8d4eb690b8567ebc086,
     type: 3}
   CarsParent: {fileID: 1019785472}
+  TurnPointInfosParent: {fileID: 796930561}
   TurnPointsParent: {fileID: 1314015798}
   EntrancePrefab: {fileID: 8625070430976971103, guid: 109d8352ab48cd548b5d85d741493721,
     type: 3}
   ExitPrefab: {fileID: 5479112869327323652, guid: 31c1fd5cdb9474440bb5384a009fde9e,
     type: 3}
-  CurrentTurnIndex: 0
   IsTurnInitiated: 0
   IsTurnStarted: 0
   LevelEndUI: {fileID: 685844554}
   NextLevelButton: {fileID: 315833152}
   PlayedTurnCountText: {fileID: 357725914}
+  CurrentTurnIndex: 0
 --- !u!4 &170943544
 Transform:
   m_ObjectHideFlags: 0
@@ -3241,6 +3241,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1363355971}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1670444218
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3557943426199400048, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_Name
+      value: CarRotateKeyControl
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6494493
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.07999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.08885241
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3557943426199400054, guid: c216f0ddbbea5b248812867b976069cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c216f0ddbbea5b248812867b976069cb, type: 3}
 --- !u!1001 &1682951852
 PrefabInstance:
   m_ObjectHideFlags: 0
