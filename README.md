@@ -7,6 +7,8 @@ Prototype built compatible to level designing.
 There are APK, Windows and Linux builds under releases. 
 You can use Left and Right arrow for rotation in non-mobile platforms. 
 
+You can use **Left and Right** arrow keys for controlling the car.
+
 ## Classes
 
 **TurnPointInfo** -> Level design focused class and prefab for designing entrance, exit point and car position in scene.
