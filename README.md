@@ -1,6 +1,6 @@
 # Baran_Taylan_CarGame
 
-This game developed with **Unity 2019.4.9f1** for a prototype. 
+This game developed with **Unity 2019.4.8f1** for a prototype. 
 
 Prototype built compatible to level designing.
 
